@@ -122,6 +122,11 @@ a {
   width: 2.5em;
 }
 
+.social-link:hover,
+.social-link:active {
+  background: rgba(100, 130, 220, 0.5);
+}
+
 .social-list {
   list-style: none;
   padding: 0;
