@@ -62,7 +62,16 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: helvetica, arial, sans;
+  min-height: 100vh;
+}
+
+.content-container {
+  flex: 1 1 auto;
+  padding-top: 10vh;
+  width: 100%;
 }
 
 h1 {
@@ -74,12 +83,13 @@ h2 {
   font-size: 7vw;
 }
 
-a {
+a {￼￼￼￼￼￼￼
   color: #6397b5;
 }
 
 p {
   line-height: 1.5;
+  margin: 0.75em 0;
 }
 
 h2 ~ p {
@@ -194,18 +204,21 @@ h2 ~ p {
   background-color: #c7dbfc;
   background-size: cover;
   box-sizing: border-box;
-  height: 100vh;
+  height: 90vh;
   padding-top: 10vh;
 }
 
 .full-hero:after {
   bottom: 2vh;
-  color: #fff;
-  content: "﹀";
+  border: 10px solid;
+  border-color: #fff transparent transparent;
+  height: 0;
+  content: "";
   font-size: 36px;
   left: 50%;
   position: absolute;
-  transform: translate(-50%, 0)
+  transform: translate(-50%, 0);
+  width: 0;
 }
 
 .hero-home {
@@ -281,18 +294,24 @@ h2 ~ p {
 }
 
 .home-callout {
+  display: flex;
+  align-items: center;
   background-color: #000;
   color: #fff;
+  display: flex;
   padding: 7vh 0;
 }
 
 .callout-title {
+  flex: 1;
   font-size: 5.75vw;
   text-align: right;
   text-transform: uppercase;
 }
-
+￼￼￼￼￼￼￼￼￼￼￼￼
 .callout-copy {
+  flex: 0 0 45em;
+  padding: 0 3vw;
   font-size: 0.8rem;
 }
 
